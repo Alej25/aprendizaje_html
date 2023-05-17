@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      col {
+        background-color: steelblue;
+      }
+
+
+    </style>
+</head>
+<body>
+    <!--  la introduccion en las tablas , la cuales sirven para mostrar contenido tabulado
+           la estructura basica de las tablas:
+           table----etiqueta que encierra una tabla 
+           tr//table row---- etiqueta que construye una fila 
+           td// table data ----etiqueta que construya una celda 
+      
+           consejo : el numero de celdas en un td , estableceta el numero de columnas de la
+           tabla
+           lo stitulos de las tablas se establecen con la etiqueta caption , es un aetiquta opcional , segun las especificaciones se ccoloca antes de la etiqueta table .
+           las cabeceras de las tablas se establecen con la etiqueta thead, dentro tenemos un a etiqueta tr normal , pero en el caso de las celasd se establecen con una etiqueta th en ves de usar td.
+            el contenido de la tabla debe de ir en una etiqueta tbody para representar el cuerpo de la tabla .
+             de forma opcional podemos colocar un tfoot a la tabla para representar el pie de la tabla  , se usa en tablas de suma de cantidades 
+
+             cuando necesistamos seleccionar una columna usamos la etiqueta colorgroup, que nos permite selecconar una  columna por cpmpleto , dentro pondremos tantas etiquetas col como columnas que tengamos ,cada etiqueta col  eqivaldra a un acolumna sigueindo el mismo orden que tienen en la tabla
+             si necesitamos que una etiqueta col agrupe mas de una columna , tenemos el atributo span , que funciona igual que rowspan y colspan
+
+    -->
+    <h1>ejemplo de tablas </h1>
+  
+      <table>
+            <caption> Horario </caption> // para definir el encabezado de la tabla 
+            <colgroup>
+              <col>
+            </colgroup>
+            <thead> // definimos el nombre de las columnas de la tabla 
+              <tr> // para las filas 
+                <th>  </th> // para las columnas 
+                <th>L</th>
+                <th>Ma</th>
+                <th>Mi</th>
+                <th>J</th>
+                <th>V</th>
+              </tr>
+            </thead>
+             <tbody>
+
+          <tr> // agrupamos la pirmera fila 
+          <td>7-8</td>
+          <td>matematicas</td>
+          <td>matematicas</td>
+          <td>sociales</td>
+          <td>matematicas</td>
+          <td rowspan="2">matematicas</td>
+        </tr>
+        <tr>
+          <td>8-9</td>
+          <td>lengua</td>
+          <td>lengua</td>
+          <td>matematicas</td>
+          <td>ciecia</td>
+          
+        </tr>
+        <tr>
+            <td>9-10</td>
+            <td>educacion fisica</td>
+            <td>ciecia</td>
+            <td>lengua</td>
+            <td>lengua</td>
+            <td>educacion fisica</td>
+        </tr>
+        <tr>
+          <td> 10-11</td>
+          <td colspan="5"> receso </td>
+        </tr>
+        <tr>
+          <td>11-12</td>
+          <td rowspan="2"> fisica</td>
+          <td> taller </td>
+          <td>elctronica</td>
+          <td>civismo</td>
+          <td>civismo </td>
+        </tr>
+        <tr>
+          <td>12-1</td>
+           <td> taller </td>
+          <td>maquinas</td>
+          <td> </td>
+          <td>  </td>
+
+        </tr>
+      </tbody> // fuera de la cabeza de la tabla , usamos el tboody para definir el cuerpo semanticamente correcto de la tabal 
+      </table>
+
+  
+
+</body>
+</html>

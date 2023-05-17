@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+  form---etiqueta que engloba todo el formulario
+  label--sieve para escribir el campo a reyenar
+  debe de tner un atributo for al cual se le indica un id que hara que se emparejar su label con el imput correspondiente 
+  imput--se usa para crear un campo en el cual el usuario va a interactuar
+  button--crea un boton que permite enviar el formulario 
+
+  imput type
+  imput para fecha---- imput type date y asi establecemos los valores de la fecha
+  imput time para la hora 
+
+  imput para moviles
+  search barra de busqueda
+  tell introducion numero telefonicos
+  email introducir un email
+  pasword introducir un pasword
+  url introducir contraseña
+
+
+  inputs extra
+  color estblecer un color por el usuario
+  number establecer un aproximado de numero s
+  range sirve para pone un rango ,usar etiquetas step es un maximo min  ymax 
+  reset resetea cualquier valor modificado de los botones
+  text
+
+
+  radios button
+  usamos la etiqueta intput con el atriburTo radio y el atributo name generate para que soo se pueda seleccionar uno a la vez
+
+  input chetbox
+ permiten seleccionar varias opciones de una lista 
+
+ -->
+
+
+
+<body>
+     <form  >
+         <label for="nombre"> Nombre</label>
+         <input id="nombre">
+         <button>enviar</button>
+         <br><hr><br>
+         <label  >fecha  
+         <input type="date">
+         <input type="time">
+         <input type="month">
+        </label>
+        <br>
+        <hr><br>
+        <label  >search
+            <input type="search">
+        </label>
+        <label  >tell
+            <input type="tell">
+        </label>
+        <label  >email
+            <input type="email">
+        </label>
+        <label  >pasword
+            <input type="password">
+        </label>
+        <hr><br>
+
+        <label  > masculino
+            <input type="radio" name="gender">
+        </label>
+        <label  >femenino
+            <input type="radio" name="gender">
+        </label>
+  <hr><br>
+        <label  > html 
+            <input type="checkbox" name="generate" value="htmlm">
+        </label>
+     </form>
+
+</body>
+</html>
